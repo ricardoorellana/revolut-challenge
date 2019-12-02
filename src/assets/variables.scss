@@ -1,0 +1,34 @@
+// fonts
+$primaryFont: 'Quicksand', sans-serif;
+
+:export {
+    primaryFont: $primaryFont
+}
+
+// colors
+$white: #FFF;
+$shark: #282c34;
+$blueRibbon: rgba(27,106,254,1);
+$mariner: rgba(33,94,203,1);
+$blueLight: rgb(27,106,254);
+
+:export {
+    white: $white;
+    shark: $shark;
+    blueRibbon: $blueRibbon;
+    mariner: $mariner;
+    blueLight: $blueLight;
+}
+
+// card shadow
+$black12: rgba(0,0,0,0.12);
+$black24: rgba(0,0,0,0.24);
+$black25: rgba(0,0,0,0.25);
+$black22: rgba(0,0,0,0.22);
+
+:export {
+    black12: $black12;
+    black24: $black24;
+    black25: $black25;
+    black22: $black22;
+}

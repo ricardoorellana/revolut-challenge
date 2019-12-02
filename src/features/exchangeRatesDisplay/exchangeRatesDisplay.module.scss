@@ -1,0 +1,48 @@
+@import "../../assets/variables.scss";
+
+
+/* Exchange container */
+.root {
+    display: flex;
+    flex-direction: column;
+    background-color: $shark;
+    min-height: 90vh;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+}
+
+.cardShadow {
+    box-shadow: 0 1px 3px $black12, 0 1px 2px $black24;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+    &:hover {
+        box-shadow: 0 14px 28px $black25, 0 10px 10px $black22;
+    }
+}
+
+.baseCurrency {
+    @extend .cardShadow;
+    background: $blueLight;
+    background: linear-gradient(0deg, $blueRibbon 0%, $blueRibbon 54%);
+}
+
+.convertedCurrency {
+    @extend .cardShadow;
+    background: rgb(33,94,203);
+    background: linear-gradient(0deg, mariner 0%, mariner 71%);
+}
+
+.triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 25px solid $blueLight;
+}
+
+.text {
+    margin: 0;
+    padding: 0;
+}

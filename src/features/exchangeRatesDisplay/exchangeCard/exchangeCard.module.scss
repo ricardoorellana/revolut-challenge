@@ -1,0 +1,24 @@
+@import "../../../assets/variables.scss";
+
+
+.root {
+    width: 40vmax;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    justify-content: space-around;
+}
+
+.currency {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 2em;
+    font-family: $primaryFont;
+}
+
+.indicatorDots {
+    align-self: flex-end;
+}
